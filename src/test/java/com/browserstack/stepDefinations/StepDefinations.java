@@ -1,6 +1,7 @@
 package com.browserstack.stepDefinations;
 
-import com.browserstack.base.AppDriver;
+import java.io.IOException;
+
 import com.browserstack.base.AppFactory;
 import com.browserstack.pageObjects.HomePage;
 import io.appium.java_client.AppiumDriver;
@@ -9,18 +10,15 @@ import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.remote.DesiredCapabilities;
-
-import java.io.IOException;
 
 public class StepDefinations {
     private HomePage homePage;
     private String input = "demoText";
     public static AppiumDriver<MobileElement> driver;
 
-    @Given("When User launches the app")
-    public void when_user_launches_the_app() throws IOException {
-        AppFactory.launchApp(driver);
+    @Given("When User launches the app on {string}")
+    public void when_user_launches_the_app(String deviceShortName) throws IOException {
+        AppFactory.launchApp(deviceShortName);
         System.err.format("Thread ID - %2d",
                 Thread.currentThread().getId());
         homePage = new HomePage();

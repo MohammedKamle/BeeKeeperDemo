@@ -2,17 +2,23 @@ plugins {
     id 'java'
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
 group 'org.example'
 version '1.0-SNAPSHOT'
+
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     implementation group: 'io.appium', name: 'java-client', version: '7.3.0'
+    // https://mvnrepository.com/artifact/junit/junit
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     implementation group: 'org.freemarker', name: 'freemarker', version: '2.3.28'
     implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
