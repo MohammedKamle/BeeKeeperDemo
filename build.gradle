@@ -5,13 +5,17 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
     implementation group: 'io.appium', name: 'java-client', version: '7.3.0'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     implementation group: 'org.freemarker', name: 'freemarker', version: '2.3.28'

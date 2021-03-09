@@ -1,36 +1,26 @@
 package com.browserstack.stepDefinations;
 
-import com.browserstack.base.AppDriver;
 import com.browserstack.base.AppFactory;
 import com.browserstack.pageObjects.HomePage;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.IOException;
 
 public class StepDefinations {
     private HomePage homePage;
     private String input = "demoText";
-    public static AppiumDriver<MobileElement> driver;
 
-    @Given("When User launches the app")
-    public void when_user_launches_the_app() throws IOException {
-        AppFactory.launchApp(driver);
+    @Given("When User launches the app on {string}")
+    public void when_user_launches_the_app(String deviceName) throws IOException {
+        AppFactory.launchApp(deviceName);
         System.err.format("Thread ID - %2d",
                 Thread.currentThread().getId());
         homePage = new HomePage();
     }
 
-    @Given("Step from {string} in {string} feature file")
-    public void step(String scenario, String file) {
-        System.out.format("Thread ID - %2d - %s from %s feature file.\n",
-                Thread.currentThread().getId(), scenario,file);
-    }
     @And("User navigates to EchoBox")
     public void user_navigates_to_echo_box() throws InterruptedException {
         Thread.sleep(3000);
