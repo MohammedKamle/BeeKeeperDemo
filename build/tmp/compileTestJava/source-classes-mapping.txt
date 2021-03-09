@@ -1,12 +1,16 @@
 com/browserstack/pageObjects/HomePage.java
  com.browserstack.pageObjects.HomePage
-com/browserstack/RunnerClasses/RunnerTest.java
- com.browserstack.RunnerClasses.RunnerTest
-com/browserstack/base/AppDriver.java
- com.browserstack.base.AppDriver
 com/browserstack/base/DeviceCapability.java
  com.browserstack.base.DeviceCapability
-com/browserstack/stepDefinations/StepDefinations.java
- com.browserstack.stepDefinations.StepDefinations
+com/browserstack/base/AppDriver.java
+ com.browserstack.base.AppDriver
 com/browserstack/base/AppFactory.java
  com.browserstack.base.AppFactory
+com/browserstack/steps/StepDefinations.java
+ com.browserstack.steps.StepDefinations
+com/browserstack/base/DeviceConfiguration.java
+ com.browserstack.base.DeviceConfiguration
+com/browserstack/tests/DemoTest2.java
+ com.browserstack.tests.DemoTest2
+com/browserstack/tests/DemoTest1.java
+ com.browserstack.tests.DemoTest1

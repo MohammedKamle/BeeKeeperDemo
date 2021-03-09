@@ -2,15 +2,16 @@
 userName: mohammedk1
 acessKey: spBCpUJaVTnvxxssFtEJ
 server: hub-cloud.browserstack.com
-platform: ios
-osVersion: 14
-device: iPhone 11
-app: bs://094fc4cc8bc8e491aebf2974eb84d59b9a0414e9
+devices:
+  - name: ios11
+    platform: ios
+    osVersion: 14.0
+    device: iPhone 12
+    app: bs://094fc4cc8bc8e491aebf2974eb84d59b9a0414e9
+  - name: androidPixel3
+    platform: android
+    osVersion: 9.0
+    device: Google Pixel 3
+    app: bs://5d9bdde826e55d14a52c851bd4aa133741c608dd
 
-#userName: mohammedk1
-#acessKey: spBCpUJaVTnvxxssFtEJ
-#server: hub-cloud.browserstack.com
-#platform: android
-#osVersion: 11.0
-#device: Google Pixel 3
-#app: bs://5d9bdde826e55d14a52c851bd4aa133741c608dd
+

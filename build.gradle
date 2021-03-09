@@ -43,5 +43,5 @@ task demo(type: Test){
     testLogging {
         showStandardStreams = true
     }
-    include '**/RunnerTest.class'
+    include '**/DemoTest1.class'
 }

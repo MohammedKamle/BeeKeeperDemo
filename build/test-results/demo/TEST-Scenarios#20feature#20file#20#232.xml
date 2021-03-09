@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenarios feature file #2" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-09T16:59:38" hostname="Mohammeds-MacBook-Pro.local" time="40.312">
+  <properties/>
+  <testcase name="Scenario Number One on ios11" classname="Scenarios feature file #2" time="14.546"/>
+  <testcase name="Scenario Number One on androidPixel3" classname="Scenarios feature file #2" time="25.766"/>
+  <system-out><![CDATA[Test launching on iPhone 12
+Test launching on Google Pixel 3
+]]></system-out>
+  <system-err><![CDATA[Mar 09, 2021 10:29:47 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: OSS
+Thread ID - 13Mar 09, 2021 10:30:13 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: OSS
+Thread ID - 13]]></system-err>
+</testsuite>
