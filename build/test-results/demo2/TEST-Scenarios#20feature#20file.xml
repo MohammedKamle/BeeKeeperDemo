@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenarios feature file" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-03-08T09:42:14" hostname="Mohammeds-MacBook-Pro.local" time="0.419">
+  <properties/>
+  <testcase name="Scenario Number One" classname="Scenarios feature file" time="0.419">
+    <failure message="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;os-version&quot; (class com.browserstack.base.DeviceCapability), not marked as ignorable (4 known properties: &quot;app&quot;, &quot;platform&quot;, &quot;osVersion&quot;, &quot;device&quot;])&#10; at [Source: (BufferedInputStream); line: 3, column: 15] (through reference chain: com.browserstack.base.DeviceCapability[&quot;os-version&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;os-version&quot; (class com.browserstack.base.DeviceCapability), not marked as ignorable (4 known properties: &quot;app&quot;, &quot;platform&quot;, &quot;osVersion&quot;, &quot;device&quot;])
+ at [Source: (BufferedInputStream); line: 3, column: 15] (through reference chain: com.browserstack.base.DeviceCapability[&quot;os-version&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3585)
+	at com.browserstack.base.AppFactory.launchApp(AppFactory.java:27)
+	at com.browserstack.stepDefinations.StepDefinations.when_user_is_home_screen(StepDefinations.java:47)
+	at ✽.When User is Home Screen(file:///Users/mohammed/Documents/Intellij_Projects/C_J4_Grad/src/test/resources/Features/demo.feature:4)
+</failure>
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.browserstack.stepDefinations.StepDefinations.closeApp(StepDefinations.java:68)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

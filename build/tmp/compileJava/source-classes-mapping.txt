@@ -1,0 +1,6 @@
+com/browserstack/base/DeviceCapability.java
+ com.browserstack.base.DeviceCapability
+com/browserstack/base/AppDriver.java
+ com.browserstack.base.AppDriver
+com/browserstack/base/AppFactory.java
+ com.browserstack.base.AppFactory

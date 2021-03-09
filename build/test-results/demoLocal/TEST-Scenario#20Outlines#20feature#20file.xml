@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario Outlines feature file" tests="2" skipped="0" failures="2" errors="0" timestamp="2021-03-08T11:39:57" hostname="Mohammeds-MacBook-Pro.local" time="0.168">
+  <properties/>
+  <testcase name="Scenario Outline Row 1" classname="Scenario Outlines feature file" time="0.163">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.browserstack.base.AppFactory.closeApp(AppFactory.java:52)
+	at com.browserstack.stepDefinations.StepDefinations.tearDown(StepDefinations.java:50)
+</failure>
+  </testcase>
+  <testcase name="Scenario Outline Row 2" classname="Scenario Outlines feature file" time="0.005">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.browserstack.base.AppFactory.closeApp(AppFactory.java:52)
+	at com.browserstack.stepDefinations.StepDefinations.tearDown(StepDefinations.java:50)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Thread ID - 13 - Scenario Outline Row 1 from scenario-outlines feature file.
+Thread ID - 13 - Scenario Outline Row 2 from scenario-outlines feature file.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
